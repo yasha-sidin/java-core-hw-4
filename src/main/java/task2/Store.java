@@ -16,10 +16,12 @@ public class Store {
 
     public static void welcomeConsumer(Consumer consumer) {
         consumers.add(consumer);
+        System.out.println(consumer.getLastname() + " " + consumer.getFirstname() + " come in.");
     }
 
     public static void bayConsumer(Consumer consumer) {
         consumers.remove(consumer);
+        System.out.println(consumer.getLastname() + " " + consumer.getFirstname() + " come out.");
     }
 
     public static void addProducts(Product product, int amount) throws StoreException {
